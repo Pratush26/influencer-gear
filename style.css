@@ -3,6 +3,22 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+
 #carousel {
     anchor-name: --carousel;
     scroll-snap-type: x mandatory;
