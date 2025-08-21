@@ -1,0 +1,66 @@
+#hero img{
+    background-image: url('./images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#carousel {
+    anchor-name: --carousel;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+#carousel::scroll-marker-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+#carousel>div::scroll-marker {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: dimgray;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+#carousel>div::scroll-marker:target-current {
+    background-color: black;
+}
+#carousel>div{
+    flex: 0 0 20rem;
+    scroll-snap-align: start;
+    aspect-ratio: 5/3;
+}
+#carousel::-webkit-scrollbar{
+    display: none;
+}
+#carousel::scroll-button(right):disabled, #carousel::scroll-button(left):disabled{
+    opacity: 0.5;
+}
+#carousel::scroll-button(right), #carousel::scroll-button(left){
+    background-color: black;
+    color: white;
+    padding: 2px;
+    font-size: large;
+    border: none;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    position-anchor: --carousel;
+}
+#carousel::scroll-button(right){
+    content: '>';
+    position-area: right center;
+}
+#carousel::scroll-button(left){
+    content: '<';
+    position-area: left center;
+}
+
+@media(max-width:500px) {
+    #carousel>div{
+    flex: 0 0 100%;
+}
+}

@@ -5,31 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Influencer Gear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <a href="/">Influencer Gear</a>
-        <span>
+    <nav class="flex items-center justify-between w-11/12 mx-auto p-4">
+        <a href="/" class="text-2xl font-bold">Influencer Gear</a>
+        <span class="space-x-3 text-sm font-semibold">
             <a href="#hero">Home</a>
             <a href="#hero">Products</a>
             <a href="#hero">Sign Up</a>
             <a href="#hero">Log In</a>
-            <a href="#hero">Home</a>
-            <a href="#hero">Home</a>
+            <a href="#hero"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#hero"><i class="fa-solid fa-cart-shopping"></i></a>
         </span>
     </nav>
     <main>
-        <section>
-            <div>
-                <span>
-                    <h1></h1>
-                    <p></p>
-                    <button></button>
+        <section id="hero" class="grid min-h-screen place-content-center gap-8">
+            <div class="flex items-center justify-center gap-10 w-5/6 mx-auto">
+                <span class="space-y-6">
+                    <h1 class="font-bold text-5xl">Start your Journey as Influencer</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
+                    <button class="bg-rose-600 text-white py-2 px-4 rounded-full">Preebook now <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
                 </span>
-                <img src="./images/camera.png" alt="camera image">
+                <img src="./images/main-camera.png" alt="camera image">
             </div>
-            <div>
+            <div class="flex items-center justify-evenly">
                 <img src="./logos/Alibaba.svg" alt="Alibaba logo">
                 <img src="./logos/Amazon.svg" alt="Amazon logo">
                 <img src="./logos/Daraz.pk Logo.svg" alt="Daraz logo">
@@ -40,15 +43,181 @@
             </div>
         </section>
         <section>
-            <h2>Popular Collections</h2>
-            <article>
+            <h2 class="text-center font-bold text-3xl">Popular Collections</h2>
+            <article id="carousel" class="flex gap-2 p-6 w-5/6 mx-auto overflow-x-auto scroll-smooth">
                 <div>
-                    <img src="./images/collection1.jpg" alt="Collection 1">
-                    <h4>Collection 1</h4>
-                    <p>$50.48</p>
+                    <img src="./images/tripod.png" alt="tripod image">
+                    <h4 class="font-bold text-2xl">Flex Tripod</h4>
+                    <p class="text-xl">$50.48</p>
                     <div>
-                        <img src="./images/Circle design.svg" alt="star icon">
-                        <small>4.99</small>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
+                    </div>
+                    <small>
+                        <b>
+                            Wordwide shifting available Buyers protection possible!
+                        </b>
+                    </small>
+                </div>
+                <div>
+                    <img src="./images/mic.png" alt="mic image">
+                    <h4 class="font-bold text-2xl">Microphone</h4>
+                    <p class="text-xl">$120.25</p>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
+                    </div>
+                    <small>
+                        <b>
+                            Wordwide shifting available Buyers protection possible!
+                        </b>
+                    </small>
+                </div>
+                <div>
+                    <img src="./images/airpod.png" alt="airpod image">
+                    <h4 class="font-bold text-2xl">Airbuds</h4>
+                    <p class="text-xl">$100.00</p>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
+                    </div>
+                    <small>
+                        <b>
+                            Wordwide shifting available Buyers protection possible!
+                        </b>
+                    </small>
+                </div>
+                <div>
+                    <img src="./images/drone.png" alt="drone image">
+                    <h4 class="font-bold text-2xl">Drone</h4>
+                    <p class="text-xl">$980.25</p>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
+                    </div>
+                    <small>
+                        <b>
+                            Wordwide shifting available Buyers protection possible!
+                        </b>
+                    </small>
+                </div>
+                <div>
+                    <img src="./images/lights.png" alt="Light Setup image">
+                    <h4 class="font-bold text-2xl">Light Setup</h4>
+                    <p class="text-xl">$1200.00</p>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
+                    </div>
+                    <small>
+                        <b>
+                            Wordwide shifting available Buyers protection possible!
+                        </b>
+                    </small>
+                </div>
+                <div>
+                    <img src="./images/setup.png" alt="Photoshoot set image">
+                    <h4 class="font-bold text-2xl">Photoshoot set</h4>
+                    <p class="text-xl">$820.40</p>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
+                    </div>
+                    <small>
+                        <b>
+                            Wordwide shifting available Buyers protection possible!
+                        </b>
+                    </small>
+                </div>
+                <div>
+                    <img src="./images/camera.png" alt="camera image">
+                    <h4 class="font-bold text-2xl">Vlogging Camera</h4>
+                    <p class="text-xl">$1800.80</p>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
+                    </div>
+                    <small>
+                        <b>
+                            Wordwide shifting available Buyers protection possible!
+                        </b>
+                    </small>
+                </div>
+                <div>
+                    <img src="./images/single-light.png" alt="Green Screen image">
+                    <h4 class="font-bold text-2xl">Green Screen</h4>
+                    <p class="text-xl">$25.48</p>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
+                    </div>
+                    <small>
+                        <b>
+                            Wordwide shifting available Buyers protection possible!
+                        </b>
+                    </small>
+                </div>
+                <div>
+                    <img src="./images/action.png" alt="Action Camera image">
+                    <h4 class="font-bold text-2xl">Action Camera</h4>
+                    <p class="text-xl">$380.00</p>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </span>
+                        <small class="font-bold">4.99</small>
                     </div>
                     <small>
                         <b>
@@ -57,26 +226,26 @@
                     </small>
                 </div>
             </article>
-            <article>
-                <img src="./images/action.png" alt="article image">
-                <span>
-                    <h3>Featured products at one place</h3>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+            <article class="flex items-center justify-center my-8 gap-8 w-11/12 sm:w-5/6 mx-auto">
+                <img src="./images/gear.png" alt="article image">
+                <span class="space-y-4">
+                    <h3 class="font-bold text-3xl">Featured products at one place</h3>
+                    <p class="text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
                         duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button>Join Now</button>
+                    <button class="bg-rose-600 text-white py-2 px-4 rounded-full">Join Now <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
                 </span>
             </article>
         </section>
     </main>
-    <footer>
-        <h4>Influencer products</h4>
+    <footer class="grid place-content-center text-center py-6 gap-1 bg-slate-950 text-white">
+        <h4 class="font-bold text-2xl">Influencer products</h4>
         <small>Copyright © 2020 influencer products</small>
         <p>All rights reserved</p>
-        <div>
-            <img src="./logos/Instagram.svg" alt="Instagram logo">
-            <img src="./logos/Twitter.svg" alt="Twitter logo">
-            <img src="./logos/Facebook.svg" alt="Facebook logo">
-            <img src="./logos/LinkedIn.svg" alt="LinkedIn logo">
+        <div class="space-x-4">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
         </div>
     </footer>
 </body>
